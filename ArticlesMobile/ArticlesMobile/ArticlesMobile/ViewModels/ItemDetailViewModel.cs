@@ -31,6 +31,8 @@ namespace ArticlesMobile.ViewModels
             get
             {
                 return itemId;
+
+
             }
             set
             {

@@ -27,6 +27,15 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
+
+            <x:String x:Key="UrlBase">https://master-framewoks-js.herokuapp.com</x:String>
+            <x:String x:Key="Preffix">/api</x:String>
+            <x:String x:Key="Articles">/articles</x:String>
+            <x:String x:Key="All">/null/null</x:String>
+            <x:String x:Key="Last">/true/null</x:String>
+            <x:String x:Key="ObjectName">articles</x:String>
+            <x:String x:Key="UrlImage">https://master-framewoks-js.herokuapp.com/api/get-image/</x:String>
+
         </ResourceDictionary>        
     </Application.Resources>
 </Application>

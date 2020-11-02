@@ -1,13 +1,22 @@
-﻿using System;
+﻿using ArticlesMobile.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ArticlesMobile.Models
+
 {
     public class Article
     {
 
-        public int _Id { get; set; }
+        Generals generals;
+
+        public Article()
+        {
+            generals = new Generals();  
+        }
+
+        public string _Id { get; set; }
 
         public DateTime date { get; set; }
 
@@ -16,6 +25,18 @@ namespace ArticlesMobile.Models
         public string content { get; set; }
 
         public string image { get; set; }
+
+        public string urlimage {
+            get
+            {
+                string[] p = { "UrlImage", this._Id.ToString() };
+                return this.generals.UrlImage( p );
+            }
+            set
+            {
+                urlimage = value;
+            }
+        }
 
     }
 }
